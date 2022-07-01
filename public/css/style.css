@@ -1,0 +1,385 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: white;
+    zoom: 125%;
+}
+
+.blog {
+    max-width: 600px;
+    margin: 0px auto;
+    background-color: #fff;
+}
+
+.menu {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    display: flex;
+    max-width: 600px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    padding: 20px 0px;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.menu a {
+    color: #333;
+    margin-right: 1rem;
+    padding: 4px 8px;
+    transition: background-color .1s;
+    font-weight: 300;
+}
+
+.menu .active {
+    color: black;
+    background-color: #eeeff2;
+}
+
+.menu .passive {
+    color: #e3e3e3;
+    cursor: not-allowed;
+}
+
+.menu .passive:hover {
+    background-color: tr;
+}
+
+.menu a:hover {
+    background-color: #eeeff2;
+    border-radius: 3px;
+}
+
+.profile-image {
+    margin-right: 3rem;
+}
+
+.profile-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 5px solid rgba(0, 0, 0, 0.048)
+}
+
+.header {
+    background-color: transparent;
+    color: black;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 1rem;
+}
+
+.header h2 {
+    font-weight: 500;
+}
+
+.header h4 {
+    font-weight: 300;
+    margin-top: 1rem;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-left: 100px;
+}
+
+.social-links li {
+    margin-right: 1rem;
+}
+
+.mailButton {
+    border-radius: 5px !important
+}
+
+.social-links li a {
+    background-color: #eeeff2;
+    padding: 0.8rem 1rem;
+    border-radius: 50%;
+}
+
+.social-links li a:hover {
+    background-color: #f4f4f4;
+}
+
+.social-links li a {
+    color: black;
+}
+
+.fa-brands {
+    color: black;
+}
+
+/* main */
+/* foto galeri için css pinterest layout kullan */
+.main {
+    max-width: 1260px;
+    margin: 0px auto;
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+}
+
+.main .photos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.main .photos .box {
+    margin: 1rem 0.5rem;
+
+}
+
+.box img {
+    width: 400px;
+    height: 600px;
+    border-radius: 0.5rem;
+}
+
+/* footer */
+.footer {
+    background-color: #f6f6f6;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-top: 4rem;
+}
+
+.footer a {
+    color: cornflowerblue;
+}
+
+/* blog page */
+.blog-main {
+    max-width: 600px;
+    margin: 0px auto;
+}
+
+.list li {
+    margin: 2rem 0rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #ddd
+}
+
+.list li:last-child {
+    border: none;
+}
+
+.list li .blog-title {
+    color: #a1a1a1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.blog-title {
+    transition: color .4s;
+}
+
+.blog-title:hover {
+    color: rgba(0, 0, 0, 0.692) !important;
+}
+
+.list li span {
+    font-size: .8rem;
+    padding: 2px 7px;
+    border-radius: 3px;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 2.2rem;
+    float: right;
+}
+
+.list li p {
+    color: #222;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+/* Bookmarks */
+.bookmarks .blog-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 1rem 0rem;
+    box-sizing: border-box;
+}
+
+.bookmarks-list {
+    margin: 0px !important;
+    padding: 0px !important;
+    border: none !important;
+
+    padding: .5rem 0rem !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-left: 2rem !important;
+}
+
+.bookmarks .blog-title span {
+    font-size: 1rem !important;
+    line-height: 2.5rem;
+    background-color: rgb(246, 246, 246);
+    padding: 0px 30px;
+    display: block;
+    color: #222;
+}
+
+.bookmarks-list a {
+    color: black;
+}
+
+.resp-mail {
+    display: none;
+}
+
+.margin {
+    margin-top: 10rem;
+}
+
+/* Animations */
+.text-focus-in {
+    -webkit-animation: text-focus-in 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+
+
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+.slide-left {
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-7-2 1:52:59
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
+}
+
+
+
+/* Responsive Design Codes */
+@media screen and (max-width: 1247px) {
+    .main {
+        max-width: 834px;
+        /* 423px */
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .main {
+        max-width: 423px;
+        /* 423px */
+    }
+}
+
+@media screen and (max-width: 687px) {
+    .profile-image {
+        display: none;
+    }
+
+    .menu {
+        text-align: center;
+        width: 334px;
+    }
+
+    .blog {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header {
+        padding: 3rem;
+    }
+
+    .resp-mail {
+        display: block;
+    }
+
+    .mailButtonLi {
+        display: none;
+    }
+}
